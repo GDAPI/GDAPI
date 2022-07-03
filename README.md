@@ -21,5 +21,7 @@ See README in each package for more information.
 | level-str | Planned | Encode/decode encoded raw level string.
 | level | Planned | Parse/stringify encoded level string into readable javascript object using crypto and level-str module.
 
+# Project structure
+
 # Credit
 Great thanks to [gddocs](https://github.com/gd-programming/gddocs) team for providing valuable reference.
