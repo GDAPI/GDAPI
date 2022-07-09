@@ -1,0 +1,66 @@
+name: Crypto Module Test
+
+on:
+  push:
+    paths:
+      - 'packages/crypto/**'
+  pull_request:
+    paths:
+      - 'packages/crypto/**'
+
+jobs: 
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      # setup
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      
+      - run: npm ci
+
+      # run lint
+      - name: Lint
+        run: npm run lint -w @gdapi/crypto
+  
+  test-browser:
+    runs-on: ubuntu-latest
+    steps:
+      # setup
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      
+      - run: npm ci
+
+      - run: sudo apt-get install google-chrome-stable
+
+      # run test
+      - name: Test on Browser
+        run: npm run test:browser -w @gdapi/crypto
+    
+  test-node:
+    runs-on: ubuntu-latest
+    steps:
+      # setup
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      
+      - run: npm ci
+
+      # run test
+      - name: Test on Node
+        run: npm run test:node -w @gdapi/crypto
