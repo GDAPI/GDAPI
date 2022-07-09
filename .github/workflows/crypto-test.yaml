@@ -23,10 +23,11 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       
       - run: |
-        npm config set proxy null
-        npm config set https-proxy null
-        npm config set registry http://registry.npmjs.org/
-        npm ci
+          npm config set proxy null
+          npm config set https-proxy null
+          npm config set registry http://registry.npmjs.org/
+          npm ci
+      
 
       # run lint
       - name: Lint
