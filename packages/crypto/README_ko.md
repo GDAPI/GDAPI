@@ -1,3 +1,5 @@
+[English](README.md) | 한국어
+
 ## Module: crypto
 [![Crypto Module Test](https://github.com/GDAPI/GDAPI/actions/workflows/crypto-test.yaml/badge.svg)](https://github.com/GDAPI/GDAPI/actions/workflows/crypto-test.yaml)
 [![Published on npm](https://img.shields.io/npm/v/@gdapi/plist.svg)](https://www.npmjs.com/package/@gdapi/plist)
