@@ -20,14 +20,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-          registry-url: 'https://registry.npmjs.org'
       
-      - run: |
-          npm config set proxy null
-          npm config set https-proxy null
-          npm config set registry http://registry.npmjs.org/
-          npm ci
-      
+      - run: npm ci
 
       # run lint
       - name: Lint
