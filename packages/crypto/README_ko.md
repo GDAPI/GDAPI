@@ -41,19 +41,19 @@ import {
 } from '@gdapi/crypto'
 ```
 
-`[decryptGameFile](doc/ko/decryptGameFile.md)` 
+[decryptGameFile](doc/ko/decryptGameFile.md)
 
   암호화된 게임 파일(`CCGameManager.dat`, `CCLocalLevels.dat` 등)을 받아서 암호화를 해제하는 함수입니다.
 
-`[encryptGameFile](doc/ko/encryptGameFile.md)` 
+[encryptGameFile](doc/ko/encryptGameFile.md)
 
   데이터를 받아서 게임이 불러올 수 있도록 암호화하는 함수입니다. 암호화된 데이터를 게임 파일로 저장하면 게임이 원하는 데이터를 불러오도록 할 수 있습니다.
 
-`[decryptLevel](doc/ko/decryptLevel.md)`
+[decryptLevel](doc/ko/decryptLevel.md)
 
   게임에서 플레이 가능한 레벨에 대한 정보를 담고 있는 인코딩된 레벨 데이터를 처리 가능한 데이터로 디코딩합니다.
 
-`[encryptLevel](doc/ko/encryptLevel.md)`
+[encryptLevel](doc/ko/encryptLevel.md)
 
   디코딩된 레벨 데이터를 게임이 불러올 수 있는 인코딩된 레벨 데이터로 인코딩합니다.
 

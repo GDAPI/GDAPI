@@ -41,19 +41,19 @@ import {
 } from '@gdapi/crypto'
 ```
 
-`[decryptGameFile](doc/en/decryptGameFile.md)` 
+[decryptGameFile](doc/en/decryptGameFile.md)
 
   Decrypt gamefiles(`CCGameManager.dat`, `CCLocalLevels.dat`).
 
-`[encryptGameFile](doc/en/encryptGameFile.md)` 
+[encryptGameFile](doc/en/encryptGameFile.md) 
 
   Encrypt data into gamefile data. The encrypted data can be readily saved as a gamefile.
 
-`[decryptLevel](doc/en/decryptLevel.md)`
+[decryptLevel](doc/en/decryptLevel.md)
 
   Decode encoded level data.
 
-`[encryptLevel](doc/en/encryptLevel.md)`
+[encryptLevel](doc/en/encryptLevel.md)
 
   Encode decoded level data.
 
