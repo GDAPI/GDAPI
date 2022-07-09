@@ -72,7 +72,7 @@ const text = await res.text()
 const encodedLevelData = text.match(/:4:(.*?):/)[1]
 
 // 데이터 디코딩
-const decodedLevelData = decryptLevel(encodedLevelData)
+const decodedLevelData = await decryptLevel(encodedLevelData)
 
 // 첫 50자만 찍어보기
 console.log(decodedLevelData.substring(0, 50))
