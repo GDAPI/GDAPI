@@ -1,3 +1,5 @@
+[English](../en/encryptLevel.md) | 한국어
+
 # encryptLevel()
 
 디코딩된 레벨 데이터를 게임이 불러올 수 있는 인코딩된 레벨 데이터로 인코딩합니다.
@@ -16,7 +18,7 @@ encryptLevel(levelData)
 
 ### 매게변수
 
-`levelData`
+- `levelData`
 
   디코딩된 레벨 데이터 문자열.
 

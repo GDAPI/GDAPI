@@ -1,3 +1,5 @@
+[English](../en/decryptLevel.md) | 한국어
+
 # decryptLevel()
 
 게임에서 플레이 가능한 레벨에 대한 정보를 담고 있는 인코딩된 레벨 데이터를 처리 가능한 데이터로 디코딩합니다.
@@ -16,7 +18,7 @@ decryptLevel(levelData)
 
 ### 매게변수
 
-`levelData`
+- `levelData`
 
   인코딩된 레벨 데이터 문자열. 게임 파일 내부 또는 게임 서버와 직접 통신하는 등의 방법으로 얻을 수 있습니다.
 

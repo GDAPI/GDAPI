@@ -1,8 +1,11 @@
+[English](../en/decryptGameFile.md) | 한국어
+
 # decryptGameFile()
 
 암호화된 게임 파일(`CCGameManager.dat`, `CCLocalLevels.dat` 등)을 받아서 암호화를 해제하는 함수입니다. __주의__: 이 함수는 windows 운영체제에서 생성된 게임 파일만 해제할 수 있으며 아래의 설명은 모두 windows 운영체제에만 적용됩니다.
 
 ## 불러오기
+
 `@gdapi/crypto` 패키지에서 `import`문을 이용해서 함수를 불러오세요.
 ```js
 import { decryptGameFile } from '@gdapi/crypto'
@@ -15,15 +18,18 @@ decryptGameFile(data)
 ```
 
 ### 매게변수
-`data`
+
+- `data`
 
   `Uint8Array`(브라우저에서) 또는 `Buffer`(Node.js에서) 형식의 게임 파일 이진 데이터. 브라우저에서 게임 파일의 데이터를 불러오려면 `<input type="file">` 요소를 이용해서 얻을 수 있는 `File` 오브젝트를 이용하거나 `fetch()` API가 돌려주는 `Response` 오브젝트를 이용할 수 있습니다. Node.js에서는 `fs.readFile()`을 `encoding` 매게변수 없이 호출하면 `Buffer` 형식으로 데이터를 가져올 수 있습니다. 자세한 방법은 아래 예시들을 참조하세요.
 
 ### 반환값
 
-문자열을 resolve하는 `Promise` 오브젝트를 돌려줍니다.
+암호화가 해제된 문자열을 resolve하는 `Promise` 오브젝트를 돌려줍니다.
 
 ## 설명
+
+### 암호화 방식
 
 Geometry Dash 게임의 게임 파일은 `.dat` 확장자를 가지고 있는 암호화된 파일로 Windows에서는 `%localappdata%\GeometryDash` 폴더 안에 있습니다. `CCGameManager.dat`은 게임의 세이브 파일이라고 생각할 수 있으며, 게임 플레이에 관한 데이터들이 모두 이 파일에 기록됩니다. `CCLocalLevels.dat`은 편집기로 만든 로컬 레벨들을 담고 있습니다.
 
